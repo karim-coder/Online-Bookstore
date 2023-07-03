@@ -1,0 +1,186 @@
+.book {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  perspective: 1000px;
+}
+.shadow {
+  position: absolute;
+  top: -25px;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0)
+  );
+  filter: blur(5px);
+  transform-origin: top;
+  transform: skewX(45deg);
+}
+.books:only-child .element {
+  align-self: flex-start;
+}
+/* .book1 {
+  width: 35%;
+  height: 250px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.shadow1 {
+  position: absolute;
+  top: -270px;
+  left: -47px;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(
+    to bottom,
+    rgba(222, 215, 208, 1),
+    rgba(222, 215, 208, 0.8),
+    rgba(222, 215, 208, 0)
+  );
+
+  transform-origin: top;
+  transform: skewX(45deg) rotateY(-78.5deg);
+  clip-path: polygon(0 90%, 90% 0, 50% 100%);
+} */
+
+/* .book1 {
+  width: 600px;
+  height: 600px;
+  position: relative;
+
+  filter: blur(10px);
+  perspective: 100px;
+}
+.shadow1 {
+  position: absolute;
+
+  left: -260px;
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+      to bottom,
+      rgba(202, 192, 179, 1),
+      rgba(202, 192, 179, 0.9),
+      rgba(202, 192, 179, 0.8),
+      rgba(202, 192, 179, 0.8),
+      rgba(202, 192, 179, 0.7),
+      rgba(202, 192, 179, 0.7),
+      rgba(202, 192, 179, 0.6),
+      rgba(202, 192, 179, 0.6),
+      rgba(202, 192, 179, 0.5),
+      rgba(202, 192, 179, 0.5),
+      rgba(202, 192, 179, 0.4),
+      rgba(202, 192, 179, 0.4),
+      rgba(202, 192, 179, 0.3),
+      rgba(202, 192, 179, 0.3),
+      rgba(202, 192, 179, 0.2),
+      rgba(202, 192, 179, 0.08),
+      rgba(202, 192, 179, 0.06),
+      rgba(202, 192, 179, 0.04),
+      rgba(202, 192, 179, 0)
+    ),
+    linear-gradient(
+      to right,
+
+      rgba(202, 192, 179, 0.008),
+      rgba(202, 192, 179, 0.008),
+      rgba(202, 192, 179, 0.006),
+      rgba(202, 192, 179, 0.004),
+      rgba(202, 192, 179, 0.004),
+      rgba(202, 192, 179, 0.004),
+      rgba(202, 192, 179, 0),
+      rgba(202, 192, 179, 0),
+      rgba(202, 192, 179, 0),
+      rgba(202, 192, 179, 0),
+      rgba(202, 192, 179, 0)
+    );
+  clip-path: polygon(58% 74%, 58% 74%, 12% 81%, 8% 65%, 42% 0);
+
+  /* transform: rotate(30deg); */
+/* clip-path: polygon(72% 74%, 74% 96%, 0 83%, 27% 54%, 61% 0); */
+
+/* clip-path: polygon(100% 72%, 99% 73%, 32% 97%, 28% 79%, 36% 2%);
+  transform: rotate(30deg); */
+/* border: 1px solid #ccc; */
+/* border-radius: 40px; */
+/* border-top-left-radius: 30px;
+  border-top-right-radius: 130px; */
+/* clip-path: polygon(34% 4%, 93% 55%, 100% 86%, 64% 100%, 33% 96%, 14% 9%); */
+/* transform: skewX(-19deg) rotate(-75deg) skewX(-40deg); */
+/* } */
+
+.book1 {
+  width: 250px;
+  height: 400px;
+  position: relative;
+}
+.shadow1 {
+  position: absolute;
+  top: 150px;
+  left: -180px;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+
+  background: radial-gradient(
+      circle at top left,
+      rgba(255, 255, 255, 0.2),
+      transparent
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      transparent 70%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(204, 194, 182, 1),
+      rgba(204, 194, 182, 1),
+      rgba(204, 194, 182, 0.99),
+      rgba(204, 194, 182, 0.99),
+      rgba(204, 194, 182, 0.99),
+      rgba(204, 194, 182, 0.95),
+      rgba(204, 194, 182, 0.9),
+      rgba(204, 194, 182, 0.2),
+      rgba(204, 194, 182, 0)
+    );
+
+  filter: blur(5px);
+
+  transform: skewX(-22deg) rotate(-63deg) skewX(-30deg);
+}
+.parent {
+  position: relative;
+}
+
+.parallelogram {
+  width: 350px;
+  height: 400px;
+  position: absolute;
+  top: 240px;
+  left: -430px;
+  filter: blur(5px);
+  background: linear-gradient(
+    35deg,
+    rgba(204, 194, 182, 0) 0%,
+    rgba(204, 194, 182, 0) 20%,
+    rgba(204, 194, 182, 0.001) 40%,
+    rgba(204, 194, 182, 0.001) 45%,
+    rgba(204, 194, 182, 0.1) 50%,
+    rgba(204, 194, 182, 0.5) 60%,
+    rgba(204, 194, 182, 0.8) 70%,
+    rgba(204, 194, 182, 0.9) 90%,
+    rgba(204, 194, 182, 1) 100%
+  );
+  /* border-bottom-right-radius: 70%; */
+  border-top-right-radius: 10px;
+  overflow: hidden;
+
+  transform: skewX(-19deg) rotate(-75deg) skewX(-47deg);
+}
